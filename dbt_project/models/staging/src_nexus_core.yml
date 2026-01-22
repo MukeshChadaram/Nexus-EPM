@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: nexus_core
+    description: "Raw replicated data from Nexus Ver 2"
+    # By default, dbt looks in the 'main' schema for DuckDB
+    schema: main 
+    tables:
+      - name: general_ledger
+        # THIS IS THE FIX: We map the logical name to the physical seed name
+        identifier: nexus_core_gl_dump 
+        description: "The immutable record of every transaction."
+        columns:
+          - name: transaction_ref
+            tests:
+              - unique
+              - not_null
+          - name: dr_cr_indicator
+            tests:
+              - accepted_values:
+                  values: ['DR', 'CR']

@@ -1,0 +1,10 @@
+# dbt_project/profiles.yml
+nexus_finance:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # This points to the Docker volume we mounted at /usr/src/app/data
+      path: '/usr/src/app/data/nexus_epm.duckdb'
+      extensions:
+        - parquet  # For efficient data storage

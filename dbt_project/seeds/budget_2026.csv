@@ -1,0 +1,5 @@
+account_id,budget_month,amount_signed,scenario
+4200,2026-01-01,-3000.00,Budget
+5200,2026-01-01,2000.00,Budget
+4200,2026-02-01,-3500.00,Budget
+5200,2026-02-01,1500.00,Budget

@@ -1,0 +1,6 @@
+transaction_ref,account_number,post_date,amount,dr_cr_indicator,description
+TXN-1001,2110,2026-01-20,5000.00,CR,Customer Deposit - John Doe
+TXN-1002,2110,2026-01-20,1200.00,CR,Customer Deposit - Jane Smith
+TXN-1003,1120,2026-01-21,15000.00,DR,Car Loan Payout - Mike Ross
+TXN-1004,5200,2026-01-21,500.00,DR,Server Costs (AWS)
+TXN-1005,4200,2026-01-22,25.00,CR,Overdraft Fee Income

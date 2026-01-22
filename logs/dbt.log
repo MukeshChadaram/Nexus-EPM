@@ -1,0 +1,44 @@
+[0m02:52:28.126667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a968c7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a9686650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a96852d0>]}
+
+
+============================== 02:52:28.147244 | 9c1931af-9ebc-4764-8f4f-9ff231606641 ==============================
+[0m02:52:28.147244 [info ] [MainThread]: Running with dbt=1.7.0
+[0m02:52:28.155105 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/usr/src/app/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init nexus_finance', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:52:28.171919 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.11/site-packages/dbt/include/starter_project
+[0m02:52:28.817538 [info ] [MainThread]: 
+Your new dbt project "nexus_finance" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:52:28.818930 [info ] [MainThread]: Setting up your profile.
+[0m02:53:03.452515 [info ] [MainThread]: Profile nexus_finance written to /usr/src/app/dbt_project/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m02:53:03.455464 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 35.4048, "process_user_time": 1.142275, "process_kernel_time": 0.174796, "process_mem_max_rss": "128228", "process_out_blocks": "56", "process_in_blocks": "0"}
+[0m02:53:03.456950 [debug] [MainThread]: Command `dbt init` succeeded at 02:53:03.456829 after 35.41 seconds
+[0m02:53:03.465955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a9c5b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a96d7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7351a96db5d0>]}
+[0m02:53:03.470530 [debug] [MainThread]: Flushing usage events
+[0m03:06:34.022583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e46751110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e485a04d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e46750b10>]}
+
+
+============================== 03:06:34.032940 | 1055189b-7147-4b80-ba17-87607ec57d01 ==============================
+[0m03:06:34.032940 [info ] [MainThread]: Running with dbt=1.7.0
+[0m03:06:34.038283 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/usr/src/app/dbt_project', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:06:34.050168 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/src/app/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m03:06:34.061378 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.12713657, "process_user_time": 1.227689, "process_kernel_time": 0.228117, "process_mem_max_rss": "105036", "process_in_blocks": "95840", "command_success": false, "process_out_blocks": "0"}
+[0m03:06:34.069054 [debug] [MainThread]: Command `dbt seed` failed at 03:06:34.068309 after 0.13 seconds
+[0m03:06:34.073595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e460cbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e460cb250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x746e4606e210>]}
+[0m03:06:34.077522 [debug] [MainThread]: Flushing usage events

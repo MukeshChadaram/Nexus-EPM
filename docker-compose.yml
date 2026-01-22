@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # The EPM Brain (DuckDB + dbt + Streamlit)
+  nexus-epm-core:
+    build: .
+    container_name: nexus-epm-core
+    ports:
+      - "8502:8501" # Host:Container (Streamlit runs on 8501 inside, we see 8502 outside)
+    volumes:
+      - .:/usr/src/app         # Sync code live
+      - epm_data:/usr/src/app/data # Persist the Database
+    environment:
+      - DBT_PROFILES_DIR=/usr/src/app/dbt_project
+    networks:
+      - nexus-network
+
+  # SIMULATED Core Banking DB (Optional: For testing only)
+  # In production, we will connect to your actual Nexus Core network
+  
+volumes:
+  epm_data:
+
+networks:
+  nexus-network:
+    driver: bridge

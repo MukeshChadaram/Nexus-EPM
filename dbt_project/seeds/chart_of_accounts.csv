@@ -1,0 +1,6 @@
+account_id,account_name,account_type,report_category
+1120,Loan Receivables,Asset,Balance Sheet
+2110,Customer Deposits,Liability,Balance Sheet
+4200,Fee Income,Revenue,P&L
+5200,Operating Expense,Expense,P&L
+9999,Unallocated Suspense,Equity,Other
